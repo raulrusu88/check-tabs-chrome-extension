@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Tabs Extension",
+    "version": "1.0.0",
+    "action": { 
+      "default_popup": "index.html" 
+    },
+    "permissions": [
+      "tabs",
+      "tabGroups"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ]
+}
+
