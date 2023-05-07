@@ -46,7 +46,6 @@ function App() {
     getWindows.map(async (window: WindowType) => {
       // @ts-expect-error Exclude
       await chrome.tabs.query({ windowId: getCurrentTab.id}, (tabs: TabType[]) => {
-        console.log(tabs);
         setWindows({
           windowId: window.id,
           tabs: [...tabs]
