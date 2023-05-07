@@ -16,7 +16,6 @@ const TabItem = ({ favIconUrl, title, handleClose, url, active }: ITabItem) => {
 
     const style = {
         default: `flex justify-between items-center h-10 mb-0.5 hover:bg-gray-900 p-2 rounded`,
-        // default: `flex justify-between items-center h-10 mb-0.5 hover:bg-green-600 p-2 rounded`,
     }
     const classes = classNames(
         style.default,
