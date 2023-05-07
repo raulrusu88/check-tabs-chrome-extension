@@ -55,10 +55,17 @@ function App() {
   }, [])
 
   return (
-    <div className="w-[500px]">
+    <div className="w-[550px]">
       <h2 className="text-amber-400 text-2xl mb-3.5">Opened Tabs</h2>
       {windows && windows.tabs.map((tab: TabType) => (
-          <TabItem key={tab.id} favIconUrl={tab.favIconUrl} title={tab.title} handleClose={() => handleClose(tab.id)} url={tab.url} />
+          <TabItem
+              key={tab.id}
+              favIconUrl={tab.favIconUrl}
+              title={tab.title}
+              handleClose={() => handleClose(tab.id)}
+              url={tab.url}
+              active={tab.active}
+          />
       ))}
     </div>
   )
